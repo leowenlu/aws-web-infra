@@ -1,0 +1,28 @@
+# CDK asset staging directory
+.cdk.staging/
+
+# CDK output directory
+cdk.out/
+
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+*.d.ts
+*.js
+!jest.config.js
+
+# IDE and editor files
+.vscode/
+*.iml
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Config files starting with .
+config/.*

@@ -1,0 +1,30 @@
+aws:
+  region: ap-southeast-4
+appCert:
+  domainName: leoonline.net
+  ssmParameterName: /certs/webapp/leoonline.net
+  subjectAlternativeNames:
+    - '*.leoonline.net'
+    - sophiali.info
+    - www.sophiali.info
+    - annabelli.link
+    - www.annabelli.link
+    - claireli.link
+    - www.claireli.link
+zoneS3Cloudfront:
+  - zoneName: leoonline.net
+    bucket: leoonline.net
+    alias:
+      - www
+  - zoneName: sophiali.info
+    bucket: sophiali.info
+    alias:
+      - www
+  - zoneName: annabelli.link
+    bucket: annabelli.link
+    alias:
+      - www
+  - zoneName: claireli.link
+    bucket: claireli.link
+    alias:
+      - www
